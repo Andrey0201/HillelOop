@@ -7,6 +7,7 @@ public class Main {
         Box box3 = new Box(3, 4, 5);
         Box box4 = new Box(4, 5, 6);
         Box box5 = new Box(6, 7, 8);
+
         System.out.println(box1.volume());
         System.out.println(box2.volume());
         System.out.println(box3.volume());
