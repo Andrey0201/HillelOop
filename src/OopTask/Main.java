@@ -8,12 +8,13 @@ public class Main {
         Box box4 = new Box(4, 5, 6);
         Box box5 = new Box(6, 7, 8);
 
-        System.out.printf("box1 volume =%4d cm³\n",box1.volume());
-        System.out.printf("box2 volume =%4d cm³\n",box2.volume());
-        System.out.printf("box3 volume =%4d cm³\n",box3.volume());
-        System.out.printf("box4 volume =%4d cm³\n",box4.volume());
-        System.out.printf("box5 volume =%4d cm³\n",box5.volume());
 
+
+        System.out.printf("box1 volume =%4d cm³\n", box1.volume());
+        System.out.printf("box2 volume =%4d cm³\n", box2.volume());
+        System.out.printf("box3 volume =%4d cm³\n", box3.volume());
+        System.out.printf("box4 volume =%4d cm³\n", box4.volume());
+        System.out.printf("box5 volume =%4d cm³\n", box5.volume());
 
 
     }
