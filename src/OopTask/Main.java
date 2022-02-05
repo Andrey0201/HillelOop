@@ -38,8 +38,8 @@ public class Main {
         ColorBox colorBox3 = new ColorBox(3, 4, 5, Color.GREY, Material.CARTON);
 
         System.out.printf("ColorBox1 is %s and %s\n", colorBox1.getColor(), colorBox1.getMaterial());
-        System.out.printf("ColorBox2 is %s and %s\n", colorBox2.getColor(), colorBox1.getMaterial());
-        System.out.printf("ColorBox3 is %s and %s\n", colorBox3.getColor(), colorBox1.getMaterial());
+        System.out.printf("ColorBox2 is %s and %s\n", colorBox2.getColor(), colorBox2.getMaterial());
+        System.out.printf("ColorBox3 is %s and %s\n", colorBox3.getColor(), colorBox3.getMaterial());
 
         colorBox1.setColor(Color.RED);
         colorBox1.setMaterial(Material.GLASS);
