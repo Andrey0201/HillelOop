@@ -1,5 +1,7 @@
 package OopTask;
 
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         Box box1 = new Box(1, 2, 3);
@@ -26,7 +28,23 @@ public class Main {
                 width box2 =%2d cm
                 height box2 =%2d cm
                 length box2 =%2d cm
-                \s""",box2.getWidth(),box2.getHeight(),box2.getLength());
+                \s""", box2.getWidth(), box2.getHeight(), box2.getLength());
+
+        System.out.println();
+
+
+        ColorBox colorBox1 = new ColorBox(1, 2, 3, Color.BLACK, Material.PLASTIC);
+        ColorBox colorBox2 = new ColorBox(2, 3, 4, Color.GREEN, Material.WOOD);
+        ColorBox colorBox3 = new ColorBox(3, 4, 5, Color.GREY, Material.CARTON);
+
+        System.out.printf("ColorBox1 is %s and %s\n", colorBox1.getColor(), colorBox1.getMaterial());
+        System.out.printf("ColorBox2 is %s and %s\n", colorBox2.getColor(), colorBox1.getMaterial());
+        System.out.printf("ColorBox3 is %s and %s\n", colorBox3.getColor(), colorBox1.getMaterial());
+
+        colorBox1.setColor(Color.RED);
+        colorBox1.setMaterial(Material.GLASS);
+        System.out.printf("ColorBox1 is %s and %s\n", colorBox1.getColor(), colorBox1.getMaterial());
+
 
     }
 

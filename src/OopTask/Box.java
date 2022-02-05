@@ -4,8 +4,7 @@ public class Box {
     private int width;
     private int height;
     private int length;
-    private String color;
-    private String material;
+    private Material material;
 
     public Box(int width, int height, int length) {
         this.width = width;
@@ -15,9 +14,8 @@ public class Box {
 
     }
 
-    public Box(int width, int height, int length, String color, String material) {
+    public Box(int width, int height, int length, Material material) {
         this(width, height, length);
-        this.color = color;
         this.material = material;
 
     }
@@ -58,19 +56,12 @@ public class Box {
         this.length = length;
     }
 
-    public String getColor() {
-        return color;
-    }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getMaterial() {
+    public Material getMaterial() {
         return material;
     }
 
-    public void setMaterial(String material) {
+    public void setMaterial(Material material) {
         this.material = material;
     }
 
