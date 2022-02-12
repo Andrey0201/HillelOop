@@ -4,24 +4,31 @@ import java.util.Arrays;
 
 public class Warehouse {
     private Box[] boxes;
+    private int qualityBox;
+    private int indexBox;
 
-    public Warehouse(Box[] boxes) {
-        this.boxes = boxes;
-
-
+    public Warehouse(int qualityBox) {
+        this.qualityBox = qualityBox;
+        boxes = new Box[this.qualityBox];
     }
 
-    public Box[] getBoxes() {
-        return boxes;
-    }
-
-    public void setBoxes(Box[] boxes) {
-        this.boxes = boxes;
+    public void add(Box box) {
+        if (indexBox >= qualityBox) {
+            System.out.println("Can't add boxes more for size warehouse!");
+        } else {
+            boxes[indexBox++] = box;
+        }
     }
 
     @Override
     public String toString() {
-        return  Arrays.toString(boxes);
+        Box[] temp = new Box[indexBox];
+        for (int i = 0; i < indexBox; i++) {
+            temp[i] = boxes[i];
+
+        }
+        boxes = temp;
+        return Arrays.toString(boxes);
 
     }
 }
