@@ -4,7 +4,7 @@ public class ColorBox extends Box {
     private Color color;
 
 
-    public ColorBox(int width, int height, int length, Color color, Material material) {
+    public ColorBox(int width, int height, int length, Material material, Color color) {
         super(width, height, length, material);
         this.color = color;
 
@@ -17,5 +17,11 @@ public class ColorBox extends Box {
 
     public void setColor(Color color) {
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "{" + super.toString() + "," +
+                "color=" + color + "}" ;
     }
 }

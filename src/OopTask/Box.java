@@ -7,6 +7,9 @@ public class Box {
     private Material material;
 
     public Box(int width, int height, int length) {
+        if (width <= 0 || height <= 0 || length <= 0) {
+            throw new IllegalArgumentException("Number can't be less or equals 0 ");
+        }
         this.width = width;
         this.height = height;
         this.length = length;
@@ -67,5 +70,13 @@ public class Box {
 
     public int volume() {
         return width * height * length;
+    }
+
+    @Override
+    public String toString() {
+        return "{width=" + width +
+                ", height=" + height +
+                ", length=" + length +
+                ", material=" + material + "}";
     }
 }
